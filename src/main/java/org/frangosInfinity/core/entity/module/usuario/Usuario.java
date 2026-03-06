@@ -2,7 +2,7 @@ package org.frangosInfinity.core.entity.module.usuario;
 
 import java.time.LocalDateTime;
 
-public class Usuario
+public abstract class Usuario
 {
     private Long id;
     private String nome;

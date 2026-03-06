@@ -25,44 +25,53 @@ public abstract class Funcionario extends Usuario
         return matricula;
     }
 
-    public void setMatricula(String matricula) {
+    public void setMatricula(String matricula)
+    {
         this.matricula = matricula;
     }
 
-    public LocalDateTime getDataContratacao() {
+    public LocalDateTime getDataContratacao()
+    {
         return dataContratacao;
     }
 
-    public void setDataContratacao(LocalDateTime dataContratacao) {
+    public void setDataContratacao(LocalDateTime dataContratacao)
+    {
         this.dataContratacao = dataContratacao;
     }
 
-    public String getTurno() {
+    public String getTurno()
+    {
         return turno;
     }
 
-    public void setTurno(String turno) {
+    public void setTurno(String turno)
+    {
         this.turno = turno;
     }
 
-    public NivelAcesso getNivelAcesso() {
+    public NivelAcesso getNivelAcesso()
+    {
         return nivelAcesso;
     }
 
-    public void setNivelAcesso(NivelAcesso nivelAcesso) {
+    public void setNivelAcesso(NivelAcesso nivelAcesso)
+    {
         this.nivelAcesso = nivelAcesso;
     }
 
-    public double getSalario() {
+    public double getSalario()
+    {
         return salario;
     }
 
-    public void setSalario(double salario) {
+    public void setSalario(double salario)
+    {
         this.salario = salario;
     }
 
-    // Método comum para funcionários
-    public void baterPonto() {
-        System.out.println("Ponto registrado para: " + nome + " - " + LocalDateTime.now());
+    public void baterPonto()
+    {
+        System.out.println("Ponto registrado para: " + this.getNome() + " - " + LocalDateTime.now());
     }
 }

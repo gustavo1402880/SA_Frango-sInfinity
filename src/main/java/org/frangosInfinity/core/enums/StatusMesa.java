@@ -1,4 +1,9 @@
 package org.frangosInfinity.core.enums;
 
-public enum StatusMesa {
+public enum StatusMesa
+{
+    LIVRE,
+    OCUPADA,
+    RESERVADA,
+    MANUTENCAO
 }

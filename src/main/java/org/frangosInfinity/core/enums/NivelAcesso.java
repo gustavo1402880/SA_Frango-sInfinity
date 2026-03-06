@@ -1,4 +1,9 @@
 package org.frangosInfinity.core.enums;
 
-public enum NivelAcesso {
+public enum NivelAcesso
+{
+    ATENDENTE,
+    CAIXA,
+    COZINHEIRO,
+    ADMINISTRADOR
 }

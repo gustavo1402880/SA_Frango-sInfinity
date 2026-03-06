@@ -1,4 +1,4 @@
-package org.example.connection;
+package org.frangosInfinity.infrastructure.persistence.connection;
 
 import java.io.IOException;
 import java.io.InputStream;

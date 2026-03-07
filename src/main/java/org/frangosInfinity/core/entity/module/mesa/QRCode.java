@@ -12,7 +12,7 @@ public class QRCode
     private LocalDateTime dataExpiracao;
     private Boolean ativo;
     private Boolean utilizado;
-    private Long idMesa;
+    private String idMesa;
     private String tokenAcesso;
 
     public QRCode()
@@ -96,12 +96,12 @@ public class QRCode
         this.utilizado = utilizado;
     }
 
-    public Long getIdMesa()
+    public String getIdMesa()
     {
         return idMesa;
     }
 
-    public void setIdMesa(Long idMesa)
+    public void setIdMesa(String idMesa)
     {
         this.idMesa = idMesa;
     }

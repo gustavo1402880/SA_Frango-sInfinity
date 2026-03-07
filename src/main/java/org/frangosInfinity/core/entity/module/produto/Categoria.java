@@ -1,4 +1,4 @@
 package org.frangosInfinity.core.entity.module.produto;
 
-public class SubPedido {
+public class Categoria {
 }

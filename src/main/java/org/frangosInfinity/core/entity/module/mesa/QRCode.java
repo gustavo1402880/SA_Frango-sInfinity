@@ -13,7 +13,7 @@ public class QRCode
     private Boolean ativo;
     private Boolean utilizado;
     private Long idMesa;
-    private String tokenAcesso;
+    private String tokenSessao;
 
     public QRCode()
     {
@@ -22,7 +22,7 @@ public class QRCode
         this.dataExpiracao = this.dataCriacao.plusMinutes(2);
         this.ativo = true;
         this.utilizado = false;
-        this.tokenAcesso = UUID.randomUUID().toString();
+        this.tokenSessao = UUID.randomUUID().toString();
     }
 
     public Long getId()
@@ -75,7 +75,7 @@ public class QRCode
         this.dataExpiracao = dataExpiracao;
     }
 
-    public Boolean getAtivo()
+    public Boolean isAtivo()
     {
         return ativo;
     }
@@ -85,7 +85,7 @@ public class QRCode
         this.ativo = ativo;
     }
 
-    public Boolean getUtilizado()
+    public Boolean isUtilizado()
     {
         return utilizado;
     }
@@ -105,14 +105,14 @@ public class QRCode
         this.idMesa = idMesa;
     }
 
-    public String getTokenAcesso()
+    public String getTokenSessao()
     {
-        return tokenAcesso;
+        return tokenSessao;
     }
 
-    public void setTokenAcesso(String tokenAcesso)
+    public void setTokenSessao(String tokenSessao)
     {
-        this.tokenAcesso = tokenAcesso;
+        this.tokenSessao = tokenSessao;
     }
 
     public Boolean isExpirado()

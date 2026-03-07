@@ -2,7 +2,6 @@ package org.frangosInfinity.core.entity.module.mesa;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
-import java.util.function.DoubleBinaryOperator;
 
 public class QRCode
 {

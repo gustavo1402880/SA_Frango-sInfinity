@@ -6,18 +6,17 @@ import java.util.UUID;
 
 public class Mesa
 {
-    private String id;
+    private Long id;
     private Integer numero;
     private Integer capacidade;
     private String localizacao;
     private Boolean disponivel;
     private Boolean ativa;
-    private String idIotConfig;
-    private List<String> historicoQRCodes;
+    private Long idIotConfig;
+    private List<Long> historicoQRCodes;
 
     public Mesa(int numero, int capacidade, String localizacao)
     {
-        this.id = UUID.randomUUID().toString();
         this.numero = numero;
         this.capacidade = capacidade;
         this.localizacao = localizacao;
@@ -26,12 +25,12 @@ public class Mesa
         this.historicoQRCodes = new ArrayList<>();
     }
 
-    public String getId()
+    public Long getId()
     {
         return id;
     }
 
-    public void setId(String id)
+    public void setId(Long id)
     {
         this.id = id;
     }
@@ -83,22 +82,22 @@ public class Mesa
         this.ativa = ativa;
     }
 
-    public String getIdIotConfig()
+    public Long getIdIotConfig()
     {
         return idIotConfig;
     }
 
-    public void setIdIotConfig(String idIotConfig)
+    public void setIdIotConfig(Long idIotConfig)
     {
         this.idIotConfig = idIotConfig;
     }
 
-    public List<String> getHistoricoQRCodes()
+    public List<Long> getHistoricoQRCodes()
     {
         return historicoQRCodes;
     }
 
-    public void adicionarQRCodeHistorico(String idQRCode)
+    public void adicionarQRCodeHistorico(Long idQRCode)
     {
         this.historicoQRCodes.add(idQRCode);
     }

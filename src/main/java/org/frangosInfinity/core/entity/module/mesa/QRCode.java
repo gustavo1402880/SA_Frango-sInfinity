@@ -5,19 +5,18 @@ import java.util.UUID;
 
 public class QRCode
 {
-    private String id;
+    private Long id;
     private String codigo;
     private String urlAutenticacao;
     private LocalDateTime dataCriacao;
     private LocalDateTime dataExpiracao;
     private Boolean ativo;
     private Boolean utilizado;
-    private String idMesa;
+    private Long idMesa;
     private String tokenAcesso;
 
     public QRCode()
     {
-        this.id = UUID.randomUUID().toString();
         this.codigo = UUID.randomUUID().toString().substring(0,8).toUpperCase();
         this.dataCriacao = LocalDateTime.now();
         this.dataExpiracao = this.dataCriacao.plusMinutes(2);
@@ -26,12 +25,12 @@ public class QRCode
         this.tokenAcesso = UUID.randomUUID().toString();
     }
 
-    public String getId()
+    public Long getId()
     {
         return id;
     }
 
-    public void setId(String id)
+    public void setId(Long id)
     {
         this.id = id;
     }
@@ -96,12 +95,12 @@ public class QRCode
         this.utilizado = utilizado;
     }
 
-    public String getIdMesa()
+    public Long getIdMesa()
     {
         return idMesa;
     }
 
-    public void setIdMesa(String idMesa)
+    public void setIdMesa(Long idMesa)
     {
         this.idMesa = idMesa;
     }

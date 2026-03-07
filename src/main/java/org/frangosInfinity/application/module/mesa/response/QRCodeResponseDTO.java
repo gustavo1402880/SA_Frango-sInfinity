@@ -6,24 +6,24 @@ import java.time.LocalDateTime;
 
 public class QRCodeResponseDTO
 {
-    private String id;
+    private Long id;
     private String codigo;
     private String urlAutenticacao;
     private LocalDateTime dataCriacao;
     private LocalDateTime dataExpiracao;
-    private String idMesa;
+    private Long idMesa;
     private String caminhoImagem;
     private String mensagem;
     private Boolean sucesso;
 
     public QRCodeResponseDTO() {}
 
-    public String getId()
+    public Long getId()
     {
         return id;
     }
 
-    public void setId(String id)
+    public void setId(Long id)
     {
         this.id = id;
     }
@@ -68,12 +68,12 @@ public class QRCodeResponseDTO
         this.dataExpiracao = dataExpiracao;
     }
 
-    public String getIdMesa()
+    public Long getIdMesa()
     {
         return idMesa;
     }
 
-    public void setIdMesa(String idMesa)
+    public void setIdMesa(Long idMesa)
     {
         this.idMesa = idMesa;
     }

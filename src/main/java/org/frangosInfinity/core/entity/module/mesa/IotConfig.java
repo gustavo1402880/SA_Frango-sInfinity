@@ -2,17 +2,16 @@ package org.frangosInfinity.core.entity.module.mesa;
 
 public class IotConfig
 {
-    private String id;
-    private String idMesa;
+    private Long id;
+    private Long idMesa;
     private String ipDispositivo;
     private Integer porta;
     private String modelo;
     private Boolean online;
     private String versaoFirmware;
 
-    public IotConfig(String idMesa, String ipDispositivo, int porta)
+    public IotConfig(Long idMesa, String ipDispositivo, Integer porta)
     {
-        this.id = java.util.UUID.randomUUID().toString();
         this.idMesa = idMesa;
         this.ipDispositivo = ipDispositivo;
         this.porta = porta;
@@ -21,22 +20,22 @@ public class IotConfig
         this.versaoFirmware = "1.0.0";
     }
 
-    public String getId()
+    public Long getId()
     {
         return id;
     }
 
-    public void setId(String id)
+    public void setId(Long id)
     {
         this.id = id;
     }
 
-    public String getIdMesa()
+    public Long getIdMesa()
     {
         return idMesa;
     }
 
-    public void setIdMesa(String idMesa)
+    public void setIdMesa(Long idMesa)
     {
         this.idMesa = idMesa;
     }
